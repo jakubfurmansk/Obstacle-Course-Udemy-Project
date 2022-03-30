@@ -6,6 +6,10 @@ public class ObjectHit : MonoBehaviour
 {
     void OnCollisionEnter(Collision other) 
     {
-        GetComponent<MeshRenderer>().material.color = Color.black;
+        if(other.gameObject.tag == "Player")
+        {
+            gameObject.tag = "Hit";
+            GetComponent<MeshRenderer>().material.color = Color.black;
+        }
     }
 }
