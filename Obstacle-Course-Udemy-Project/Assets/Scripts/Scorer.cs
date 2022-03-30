@@ -7,6 +7,7 @@ public class Scorer : MonoBehaviour
     int bump = 0;
     void OnCollisionEnter(Collision other) 
     {
+        //logic that allows to count how many obstacles player has hit
         if (other.gameObject.tag != "Hit")
         {
             bump++;

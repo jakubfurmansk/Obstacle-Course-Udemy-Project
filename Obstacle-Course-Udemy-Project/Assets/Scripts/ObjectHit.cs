@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObjectHit : MonoBehaviour
 {
-    void OnCollisionEnter(Collision other) 
+    void OnCollisionEnter(Collision other) //collision handling
     {
         if(other.gameObject.tag == "Player")
         {
